@@ -1,0 +1,39 @@
+Module main()
+    //Declare variables for use in module
+    Declare Integer fatGrams, Calories
+    Devlare Real calFromFat
+    Declare Boolean valid
+    
+    // Declare math for validations. 
+    Set valid = True
+    Set calFromFat = (fatGrams x 9)
+    Set lowFat = calFromFat / calories
+
+    // Begin
+    While valid = True
+
+        // fatgrams IPO
+        Display "Enter total fat in numeral of grams: "
+        Input fatGrams
+        if fatGrams < 0:
+            Display "Numeral entered cannot be 0 or fewer"
+            return False
+
+        // Calories IPO
+        Display "Enter total number of calories: "
+        Input calories
+        if calories < 0:
+            Display "Numeral entered cannot be 0 or fewer"
+            return False
+        if calories < calFromFat:
+            Display "Calories cannot be fewer than ", calFromFat, " (9x grams of fat)"
+            return False
+        
+        // Low fat (-I)PO check and message. 
+        if lowFat < 0.3:
+            Display "Congratulations, this is a healthy choice!"
+        else: 
+            Display "That probably isn't the healthiest choice to eat."
+        
+    end While
+end module

@@ -1,0 +1,24 @@
+Project Details:
+Zipped File = Jackson_Bell_CSC105_GradedProject2 {
+    .txt file with pseudocode,
+    .jpg of flowchart,
+    .rtf of details {
+            Name: Jackson Bell
+            Student ID #23688665
+            Exam #418037
+            Email: Noskcaj620@gmail.com
+        }
+    }
+
+Create Pseudocode and Flowchart that asks for the calories in a food item. 
+
+Validations:
+•	Fat Grams and Calories cannot >= 0
+•	Calories entered can’t >= fat gramsx9
+
+Calculations:
+•	Calories from Fat% = (fat grams x 9) / calories
+
+Output: 
+•	If results >= 30% calories from fat say “This food is low in fat!”
+
